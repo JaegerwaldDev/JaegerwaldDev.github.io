@@ -1,0 +1,58 @@
+<titel>Slash Wiki: Slash Beginner's Guide</title>
+<h1 id="slash-beginners-guide"><strong>Slash Beginner&#39;s Guide</strong></h1>
+<p><strong>Note:</strong> Please install Slash <a href="https://www.github.com/JaegerwaldDev/Slash/">here</a> first. It is assumed that you already know basic programming language keywords; if you do not know where to start learning keywords, then a simple start is learning Python <a href="https://www.freecodecamp.org/news/free-python-crash-course/">here</a>.</p>
+<h2 id="getting-started"><strong>Getting Started</strong></h2>
+<p>To get started with using Slash create a file called <code>main.slh</code> in your project folder, and open it in your text editor of choice.</p>
+<p>First, make sure that everything is working by creating a simple &quot;Hello World!&quot; script; to do that write the following code in the <code>main.slh</code> file:</p>
+<pre><code>writeLine(&quot;Hello World!&quot;);
+</code></pre>
+<p>To run your project simply drag and drop the script onto the <code>slash_&lt;version&gt;.exe</code> application or <code>run.py</code> file, depending on your platform. If everything was done correctly, the console should output the following:</p>
+<pre><code>Hello World!
+</code></pre>
+<p>The console will only stay open for a short amount of time though; to fix that, we simply use the <a href="">wait</a> function from the build-in <a href="">time library</a>.</p>
+<pre><code>from time use wait;
+
+writeLine(&quot;Hello World!&quot;);
+
+wait(5);
+</code></pre>
+<p>The console should now be opened for 5 seconds, with the output &quot;Hello World!&quot;. If that is not the case, copy paste the script to make sure you didn&#39;t make any issues.</p>
+<h2 id="variables"><strong>Variables</strong></h2>
+<p>Now let&#39;s get started with using <a href="">variables</a>. Firstly, clear the current script and then come back to this guide.</p>
+<p>Variables are very simple to understand. They can have the following types of data: <a href="">strings</a>, <a href="">integers</a>, <a href="">lists</a> and <a href="">dictionarys</a>. For now we will be focussing on strings and integers.</p>
+<p>Write the following statement into the <code>main.slh</code> file:</p>
+<pre><code>from time use wait;
+
+name = &quot;John Smith&quot;;
+age = 21;
+
+wait(5);
+</code></pre>
+<p>This defines the variables &quot;name&quot; and &quot;age&quot;; name is a string type variable, while age is an integer variable. You can read this variables out using the <code>writeLine();</code> command:</p>
+<pre><code>from time use wait;
+
+name = &quot;John Smith&quot;;
+age = 21;
+
+writeLine(name);
+writeLine(age);
+
+wait(5);
+</code></pre>
+<p>Output:</p>
+<pre><code>John Smith
+21
+</code></pre>
+<p>You can combine variables and strings by simply writing <code>..</code> after the string or variable.</p>
+<pre><code>from time use wait;
+
+name = &quot;John Smith&quot;;
+age = 21;
+
+writeLine(name.. &quot;is&quot;.. age.. &quot;years old.&quot;);
+
+wait(5);
+</code></pre>
+<p>Output:</p>
+<pre><code>John Smith is 21 years old.
+</code></pre>
