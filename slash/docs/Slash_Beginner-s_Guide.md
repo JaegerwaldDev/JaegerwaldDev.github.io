@@ -1,7 +1,7 @@
 ---
-title: Slash Documentation
+title: Slash Doc: Slash Beginner's Guide
 layout: default
-nav_order: 1
+nav_order: 2
 ---
 # **Slash Beginner's Guide**
 **Note:** Please install Slash [here](https://www.github.com/JaegerwaldDev/Slash/) first. It is assumed that you already know basic programming language keywords; if you do not know where to start learning keywords, then a simple start is learning Python [here](https://www.freecodecamp.org/news/free-python-crash-course/).
