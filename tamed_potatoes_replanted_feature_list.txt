@@ -1,0 +1,280 @@
+
+               TAMED POTATOES
+                --- THE ---
+              UPDATE REPLANTED
+  
+
+
+    This is a complete from-scratch
+    remake of the original Datapack,
+    which was made for the first Datapack
+    Jam. If you want to play the original
+    you can download it here:
+
+    jagerwalddev.github.io/tamed-potatoes
+
+
+
+    This is one of our biggest projects
+    yet; please do not get overwhelmed
+    with the amount of content there is
+    to explore!
+
+
+
+              Made with love by
+         Jaegerwald and SwitchedCube
+
+  ==========================================
+
+       Tamed Potatoes Update Replanted
+                FEATURE LIST
+
+  - Potato Types
+
+      - 01 Apple Potato              [ OLD ]
+
+      Breedable with: Apple
+	  Effects: Regeneration [30s]
+	  Special Effects: None
+	  Rarity: Common
+
+      - 02 Cookie Potato             [ OLD ]
+
+      Breedable with: Cookie
+	  Effects: Saturation [30s]
+      Special Effects: Sugar Rush I [15s]
+       Run Faster when sprinting.
+	  Rarity: Common
+
+      - 03 Golden Potato             [ OLD ]
+
+      Breedable with: Golden Carrot, Golden
+	   Apple, Gold Block
+	  Effects: Regeneration [1m, 15s],
+      Saturation [1m], Speed [30s]
+	  Special Effects: None (for now)
+	  Rarity: Epic
+
+      - 04 Cake Potato               [ OLD ]
+
+      Breedable with: Cake
+	  Effects: Regeneration [1m, 30s]
+	  Special Effects: Sugar Rush III [1m]
+	   Run Faster when sprinting.
+	  Rarity: Uncommon
+
+      - 05 Honey Potato              [ OLD ]
+
+      Breedable with: HoneyBottle, HoneyComb
+	  Effects: None
+	  Special Effects: Beewinged [10s]
+        Able to fly as a bee.
+	  Rarity: Uncommon
+
+      - 06 Carrot Potato             [ OLD ]
+
+      Breedable with: Carrot, Rabbit's Foot
+	  Effects: Jump Boost I [30s]
+	  Special Effects: Rabbit Paw [15s]
+       Jump high in the air when sneaking.
+	  Rarity: Common
+
+      - 07 Melon Potato              [ OLD ]
+
+      Breedable with: Melon, Melon Slice
+	  Effects: Slowness I [45s]
+	  Special Effects: Spin Dash [30s]
+       Roll forward when sneaking.
+	  Rarity: Common
+
+      - 08 Chorus Potato             [ OLD ]
+
+      Breedable with: Chorus Plant, Chorus
+	   Flower, Chorus Fruit, P Chorus Fruit
+	  Effects: Invisibility [1m]
+	  Special Effects: Endered Soul
+       Teleport where you are looking when
+	   sneaking.
+	  Rarity: Epic
+
+      - 09 Sweet Potato              [ OLD ]
+
+      Breedable with: Sugar Cane, Sugar
+	  Effects: Speed Boost [5s]
+	  Special Effects: None
+	  Rarity: Uncommon
+
+      - 10 Pumpkin Potato             [ NEW ]
+
+      Breedable with: Pumpkin, Pumpkin Pie,
+	   Carved Pumpkin, Jack o'Lantern
+	  Effects: Blindness[30s], Slowness[30s],
+	   Invisibility [30s]
+	  Special Effects: Jumpscare [5s]
+	   Give other Players and Mobs a little
+	   spook. ;)
+	  Rarity: Uncommon
+
+      - 11 Glow Potato               [ NEW ]
+
+      Breedable with: Glowstone, Glowstone
+	   Dust, Glow Berries, Glow Ink Sack
+	  Effects: Glowing [30s], Regeneration
+	   [15s], Saturation [5s]
+	  Special Effects: Glow Burst I [45s]
+	   Dash forward with a glowing energy
+	   when sneaking.
+	  Rarity: Epic
+
+      - 12 Glistering Potato         [ NEW ]
+
+      Breedable with: Glistering Melon Slice
+	  Effects: Glowing [1m], Regeneration
+	   [45s], Saturation [45s]
+	  Special Effects: Glow Burst III [45s]
+	   Dash forward with a glowing energy
+	   when sneaking.
+	  Rarity: Legendary
+
+      - 13 Dragon Potato             [ NEW ]
+
+      Breedable with: Dragon's Breath
+	  Effects: Regeneration III [5m],
+	  Saturation I [5m], Slow Falling I [5m]
+	  Special Effects: Dragon's Wrath [5m]
+	   Cannot die when falling in the void.
+	   Dash Forward when sprinting.
+	   Jump in the air when sneaking.
+	   Kill any mobs in a 15 block radius
+	   when jumping.
+	  Rarity: Legendary
+
+      - 14 Membrane Potato           [ NEW ]
+
+      Breedable with: Phantom Membrane
+	  Effects: Slow Falling II [45s]
+	  Special Effects: Nightmare [45s]
+	   Kill any enemies nearby when
+	   sprinting.
+	  Rarity: Epic
+
+      - 15 Explosive Potato          [ NEW ]
+
+      Breedable with: Gunpowder
+	  Effects: Regeneration [30s]
+	  Special Effects: Exploding [30s]
+	   Explode when sneaking, without
+	   destroying any terrain.
+	  Rarity: Uncommon
+
+      - 16 Echo Potato               [ NEW ]
+
+      Breedable with: Echo Shard
+	  Effects: Health Boost 19 [5m],
+	   Regeneration 255 [5s]
+	  Special Effects: Wouling [5m]
+	   Ability to dig through the ground
+	   when sneaking.
+	  Rarity: Legendary
+
+      - 17 Nether Potato             [ NEW ]
+
+      Breedable with: NetherBrick,NetherWart
+	  Effects: Fire Resistance [1m],
+	   Regeneration [30s], Saturation [30s]
+	  Special Effects: Nether's Wrath
+	   Kill any Players or Enemies nearby
+	   with a firy fate. If in lava you get
+	   teleported on top.
+	  Rarity: Epic
+
+      - 18 Cocoa Potato              [ NEW ]
+
+      Breedable with: Cocoa Beans
+	  Effects: Regeneration I [5s]
+	  Special Effects: Sugar Rush II [5s]
+       Run Faster when sprinting.
+	  Rarity: Uncommon
+
+      - 19 Dark Potato               [ NEW ]
+
+      Breedable with: Dark Dye, Ink Sack
+	  Effects: Blindness [5s]
+	  Special Effects: Unleashed Wrath [5s]
+	   Kill ANYTHING around you in three
+	   block radius when sneaking.
+	  Rarity: Uncommon
+
+      - 20 Amethyst Potato           [ NEW ]
+
+      Breedable with: Amethyst Shard
+	  Effects: Glowing [15s], Saturation
+	   [5s], Regeneration [5s]
+	  Special Effects: Crystalizing [15s]
+	   Turn any hostile mobs nearby into
+	   amethyst statues when sneaking.
+	   These can be mined.
+	  Rarity: Epic
+
+      - 21 Mushroom Potato           [ NEW ]
+
+      Breedable with: Brown Mushroom, Red
+	   Mushroom
+	  Effects: Regeneration [15s],
+	   Saturation [5s]
+	  Special Effects: Shroom Support
+	   Summon mushroom creatures around you
+	   that help in a fight! These will
+	   stay until they die.
+	  Rarity: Uncommon
+
+      - 22 Fungus Potato             [ NEW ]
+
+      Breedable with: Crimson Fungus,
+	   Warped Fungus
+	  Effects: Regeneration [15s],
+	   Saturation [5s], Fire Resistance [5s]
+	  Special Effects: Develish Support
+	   Summon fungus creatures around you
+	   that help in a fight! These will
+	   stay until they die.
+	  Rarity: Epic
+
+      - 23 Pickle Potato             [ NEW ]
+
+      Breedable with: Sea Pickle
+	  Effects: Dolphins Grace II [20s],
+	   Regeneration [15s], Slowness [20s]
+	  Special Effects: None (for now)
+	  Rarity: Uncommon
+
+      - 24 Withered Potato           [ NEW ]
+
+      Breedable with: Wither Rose, Wither
+	   Skull
+	  Effects: Regeneration 256 [1m]
+	  Special Effects: Withering Wrath [1m]
+	   Able to shoot Wither Skulls in the
+	   direction you are facing when sneaking.
+	  Rarity: Legendary
+
+      - 25 Core Potato               [ NEW ]
+
+      Breedable with: End Crystal
+	  Effects: Regeneration 256 [8m],
+	   Saturation 256 [8m] Health Boost 
+	   255 [8m]
+	  Special Effects: Exploding III [30s]
+	   Explode when sneaking, without
+	   destroying any terrain.
+	  Rarity: Legendary
+
+      - 26 Netherite Potato          [ NEW ]
+
+      Breedable with: Netherite Ingot
+	  Effects: Strength IV [4m],
+	   Regeneration [4m], Saturation [4m]
+	  Special Effects:PositiveCorruption[4m]
+	   Turn Diamond Blocks into Netherite.
+	  Rarity: Legendary
