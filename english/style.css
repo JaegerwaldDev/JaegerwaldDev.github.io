@@ -1,0 +1,30 @@
+/*
+
+     _____  _____ _____   __  __       _       
+    / ____|/ ____/ ____| |  \/  |     (_)      
+   | |    | (___| (___   | \  / | __ _ _ _ __  
+   | |     \___ \\___ \  | |\/| |/ _` | | '_ \ 
+   | |____ ____) |___) | | |  | | (_| | | | | |
+    \_____|_____/_____/  |_|  |_|\__,_|_|_| |_|
+                                             
+*/
+
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Flow+Circular&family=Montserrat:wght@500&display=swap');
+
+/* BODY */
+body { background-color: #2A2730; font-family: 'Montserrat', sans-serif; }
+
+/* BUTTONS */
+button { background-color: #687692; color: #ffffff; border: 4px solid #9DB3BF; border-radius: 9px; padding: 10px; text-align: center; font-family: 'Montserrat', sans-serif; font-size: 16px; }
+button.decline { background-color: #A92977; color: #ffffff; border: 4px solid #E93F47; border-radius: 9px; padding: 10px; text-align: center; font-family: 'Montserrat', sans-serif; font-size: 16px; }
+button.accept { background-color: #11A397; color: #ffffff; border: 4px solid #10E592; border-radius: 9px; padding: 10px; text-align: center; font-family: 'Montserrat', sans-serif; font-size: 16px; }
+
+
+/* DIVS */
+div { background-color: #2A2730; border: 4px solid #45465B; border-radius: 9px; padding: 10px; text-align: center; width: 75%; margin: auto; }
+div.error { background-color: #A92977; color: #ffffff; border: 4px solid #E93F47; text-align: left; }
+
+/* TWEMOJI EMOJI SIZES */
+img.emoji { height: 20px; width: 20px; margin: 0 .05em 0 .1em; vertical-align: -0.25em; }
