@@ -7,17 +7,20 @@
     <link href="style.css" rel="stylesheet">
     <title>Document</title>
     <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
-    <script src="index.html.js"></script>
+    <script src="start_learning.html.js"></script>
 </head>
 <body>
-    <div class="error">
-        This site is still a work in progress and issues may occur, which I'll fix as soon as possible. Thank you for your patience! 😉
+    <div class="warning">
+        I am a different page.
     </div>
     <div>
-        <h1>Welcome to Placeholdername!</h1>
+        <h1>First Steps</h1>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem quaerat optio molestiae iure, recusandae laborum nemo expedita a vel blanditiis quam consectetur perspiciatis repudiandae. Magni aut sint vero dolores blanditiis.</p>
-        <button class="accept" onclick="Button_StartLearning()">Start learning</button>
-        <button class="link" onclick="Button_GitHub()">🐙 GitHub</button>
+        <button class="disabled">Back</button>
+        <button>Next</button>
+        <button class="decline">Skip</button>
+        <br>
+        <button class="debug" onclick="Debug_ReturnToIndex()">Debug_ReturnToIndex</button>
     </div>
 </body>
 <script>twemoji.parse(document.body)</script>
