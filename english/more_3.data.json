@@ -1,0 +1,17 @@
+{
+    "values": {
+        "unit_1": [
+            {"en_uk": ["coincidence"], "de_at": ["Zufall", "Glück", "Fügung"]},
+            {"en_uk": ["incredible"], "de_at": ["unglaublich"]},
+            {"en_uk": ["what a %A"], "de_at": ["was für ein %A"]},
+            {"en_uk": ["across"], "de_at": ["über"]},
+            {"en_uk": ["be about"], "de_at": ["handeln von"]},
+            {"en_uk": ["called"], "de_at": ["genannt"]},
+            {"en_uk": ["few"], "de_at": ["wenige"]},
+            {"en_uk": ["from %A to %B"], "de_at": ["von %A nach %B"]},
+            {"en_uk": ["giant"], "de_at": ["riesig"]},
+            {"en_uk": ["member"], "de_at": ["Mitglied"]},
+            {"en_uk": ["daily"], "de_at": ["täglich"]}
+        ]
+    }
+}
