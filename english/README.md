@@ -1,1 +1,1 @@
-# jaegerwalddev.github.io/<strong>english</strong>
+jaegerwalddev.github.io/<strong>english</strong>
