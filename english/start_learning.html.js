@@ -1,4 +1,4 @@
-fetch("https://jaegerwalddev.github.io/english/more3.data.json")
+fetch("https://jaegerwalddev.github.io/english/more_3.data.json")
     .then((response) => response.json())
     .then((json) => window.alert(json));
 
