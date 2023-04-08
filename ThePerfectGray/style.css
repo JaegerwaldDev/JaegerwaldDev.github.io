@@ -1,0 +1,38 @@
+* {
+    font-family: sans-serif;
+}
+.subtitle {
+    position: relative;
+    top: -24px;
+}
+.subsubtitle {
+    position: relative;
+    top: -32px;
+    color: #00000005;
+}
+body {
+    text-align: center;
+}
+.color {
+    height: 60px;
+    width: 60px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    border-color: transparent;
+    text-align: center;
+    font-size: 12px;
+    border-width: 0px;
+    margin: 5px;
+}
+.colors {
+    height: calc(100% - 128px);
+    width: 100%;
+    position: fixed;
+    top: 128px;
+    width: 200%;
+    left: -50%;
+}
+.second_row {
+    top: calc(128px + 70px);
+}
