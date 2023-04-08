@@ -10,6 +10,7 @@ function rgbToHex(r, g, b) {
 }
 
 function generateColors (difference, modify_intensity) { 
+    colors = [];
     for (let i=0; i<=16; i++) {
         let value = difference*i;
         let red = value-(i*modify_intensity);
@@ -26,6 +27,7 @@ function generateColors (difference, modify_intensity) {
 
 function setElementsToColors () {
     let css = document.getElementById("css");
+    css.textContent = "";
     for (let i=0; i<=document.getElementsByClassName("first_row")[0].childNodes.length-1; i++) {
         let colorNode = document.getElementsByClassName("first_row")[0].childNodes[i];
         let color = colors[colorNode.textContent];
