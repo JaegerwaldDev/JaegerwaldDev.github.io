@@ -329,9 +329,8 @@ div.background > *:nth-child(15) {
         height: fit-content;
         width: 75% !important;
         left: 50% !important;
-        top: unset;
-        bottom: 32px !important;
-        transform: translateX(-50%);
+        top: calc(50% + 128px) !important;
+        transform: translateX(-50%) translateY(-50%);
     }
 
     span.title {
