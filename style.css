@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+body {
+    background: linear-gradient(black, transparent);
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    animation: background-pulse 15s infinite ease-in-out;
+}
+
+@keyframes background-pulse {
+    0% {
+        background-color: #002020;
+    }
+    50% {
+        background-color: black;
+    }
+    100% {
+        background-color: #002020;
+    }
+}
+
+div.content, span.side-image {
+    transform: translateY(-50%);
+}
+span.side-image {
+    height: 248px;
+    width: 248px;
+    background-color: blue;
+    display: block;
+    position: fixed;
+    left: 128px;
+    top: 50%;
+    z-index: 1;
+    background-image: url("https://avatars.githubusercontent.com/u/86529399");
+    background-size: 256px;
+    border-radius: 256px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #ffffff20;
+    background-position-x: -4px;
+    background-position-y: -4px;
+    box-shadow: 0px 32px 32px #00000080;
+    animation: side-image-hover 5s infinite ease-in-out;
+    transition-duration: 0.25s;
+    overflow: hidden;
+}
+
+@keyframes side-image-hover {
+    0% {
+        transform: translateY(-50%);
+    }
+    25% {
+        transform: translateY(calc(-50% + 8px));
+    }
+    75% {
+        transform: translateY(calc(-50% - 8px));
+    }
+    100% {
+        transform: translateY(-50%);
+    }
+}
+
+span.side-image:hover {
+    height: 232px;
+    width: 232px;
+    background-size: 240px;
+    left: 136px;
+    cursor: pointer;
+}
+span.side-image > a {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+span.side-image:active {
+    height: 216px;
+    width: 216px;
+    background-size: 224px;
+    left: 144px;
+    cursor: pointer;
+}
+
+div.content {
+    height: fit-content;
+    width: 75%;
+    left: 512px;
+    position: fixed;
+    top: 50%;
+    z-index: 1;
+}
+span.title {
+    font-size: 64px;
+    font-weight: 500;
+}
+span.bullet {
+    font-size: 32px;
+    display: inline;
+    position: relative;
+    left: 48px;
+    font-weight: 600;
+    display: block;
+}
+span.bullet::before {
+    content: "";
+    display: block;
+    height: 12px;
+    width: 12px;
+    position: fixed;
+    border-radius: 12px;
+    left: 8px;
+    margin-top: 12px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: white;
+}
+span.subtitle {
+    font-size: 48px;
+    font-weight: 500;
+}
+
+div.background {
+    position: fixed;
+    display: block;
+    height: 100%;
+    width: 100%;
+    animation: background-wiggle 60s infinite ease-in-out;
+}
+
+@keyframes background-wiggle {
+    0% {
+        rotate: 0deg;
+    }
+    25% {
+        rotate: 15deg;
+    }
+    50% {
+        rotate: 0deg;
+    }
+    75% {
+        rotate: -15deg;
+    }
+    190% {
+        rotate: 0deg;
+    }
+}
+
+div.background > * {
+    position: fixed;
+    height: 64px;
+    width: 64px;
+    border-radius: 64px;
+    top: 0px;
+    z-index: 0;
+    filter: blur(64px);
+}
+
+@keyframes background-orb {
+    0% {
+        top: 110%;
+        transform: translateX(0%);
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+        transform: translateX(200%);
+    }
+    75% {
+        opacity: 1;
+        transform: translateX(-200%);
+    }
+    100% {
+        top: -10%;
+        transform: translateX(0%);
+        opacity: 0;
+    }
+}
+
+@keyframes background-orb-inverted {
+    0% {
+        top: 110%;
+        transform: translateX(0%);
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+        transform: translateX(200%);
+    }
+    75% {
+        opacity: 1;
+        transform: translateX(-200%);
+    }
+    100% {
+        top: -10%;
+        transform: translateX(0%);
+        opacity: 0;
+    }
+}
+
+div.background > *:nth-child(1) {
+    left: 55%;
+    animation: background-orb-inverted 7.5s infinite ease-in-out;
+    height: 128px;
+    width: 128px;
+    background-color: #002020;
+}
+div.background > *:nth-child(2) {
+    left: 40%;
+    animation: background-orb 7.5s infinite ease-in-out;
+    background-color: #006060;
+}
+div.background > *:nth-child(3) {
+    left: 55%;
+    animation: background-orb-inverted 10s infinite ease-in-out;
+    height: 128px;
+    width: 128px;
+    background-color: #004040;
+}
+div.background > *:nth-child(4) {
+    left: 85%;
+    animation: background-orb 5s infinite ease-in-out;
+    background-color: #008080;
+}
+
+div.background > *:nth-child(5) {
+    left: 85%;
+    animation: background-orb-inverted 7.5s infinite ease-in-out;
+    height: 128px;
+    width: 128px;
+    background-color: #002020;
+}
+div.background > *:nth-child(6) {
+    left: 25%;
+    animation: background-orb-inverted 5s infinite ease-in-out;
+    background-color: #006060;
+}
+div.background > *:nth-child(7) {
+    left: 95%;
+    animation: background-orb-inverted 10s infinite ease-in-out;
+    height: 128px;
+    width: 128px;
+    background-color: #004040;
+}
+div.background > *:nth-child(8) {
+    left: 95%;
+    animation: background-orb 5s infinite ease-in-out;
+    background-color: #008080;
+}
+
+div.background > *:nth-child(9) {
+    left: 60%;
+    animation: background-orb-inverted 10s infinite ease-in-out;
+    height: 128px;
+    width: 128px;
+    background-color: #002020;
+}
+div.background > *:nth-child(10) {
+    left: 25%;
+    animation: background-orb-inverted 7.5s infinite ease-in-out;
+    background-color: #006060;
+}
+div.background > *:nth-child(11) {
+    left: 0%;
+    animation: background-orb 7.5s infinite ease-in-out;
+    height: 128px;
+    width: 128px;
+    background-color: #004040;
+}
+div.background > *:nth-child(12) {
+    left: 45%;
+    animation: background-orb 7.5s infinite ease-in-out;
+    background-color: #008080;
+}
+
+div.background > *:nth-child(13) {
+    left: 20%;
+    animation: background-orb-inverted 10s infinite ease-in-out;
+    height: 128px;
+    width: 128px;
+    background-color: #002020;
+}
+div.background > *:nth-child(14) {
+    left: 50%;
+    animation: background-orb-inverted 5s infinite ease-in-out;
+    background-color: #006060;
+}
+div.background > *:nth-child(15) {
+    left: 15%;
+    animation: background-orb 7.5s infinite ease-in-out;
+    height: 128px;
+    width: 128px;
+    background-color: #004040;
+}
