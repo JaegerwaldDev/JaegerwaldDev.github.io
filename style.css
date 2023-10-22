@@ -296,7 +296,7 @@ div.background > *:nth-child(15) {
 }
 
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 500px) {
     span.side-image {
         left: 50% !important;
         top: 64px !important;
