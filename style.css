@@ -48,16 +48,13 @@ span.side-image {
 
 @keyframes side-image-hover {
     0% {
-        transform: translateY(-50%);
-    }
-    25% {
         transform: translateY(calc(-50% + 8px));
     }
-    75% {
+    50% {
         transform: translateY(calc(-50% - 8px));
     }
     100% {
-        transform: translateY(-50%);
+        transform: translateY(calc(-50% + 8px));
     }
 }
 
