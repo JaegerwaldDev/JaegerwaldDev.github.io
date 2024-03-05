@@ -1,1 +1,2 @@
 # JaegerwaldDev.github.io
+Hello!!! This is my website. If you'd like to fork it, then I think I've made it as easy as possible to change the content. Everything is configured through JSON files, so no need to change the code - have fun!

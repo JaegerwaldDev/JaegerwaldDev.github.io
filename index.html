@@ -3,42 +3,28 @@
         <title>JaegerwaldDev</title>
         <link rel="icon" type="image/png" href="./favico.png">
         <meta content="JaegerwaldDev" property="og:title"/>
-        <meta content="My official Website!" property="og:description"/>
+        <meta content="A navigator for all of my stuff." property="og:description"/>
         <meta content="https://jaegerwalddev.github.io" property="og:url"/>
-        <meta content="https://embed.com/embedimage.png" property="og:image"/>
+        <meta content="https://jaegerwalddev.github.io/embed.png" property="og:image"/>
         <meta content="#43B581" data-react-helmet="true" name="theme-color"/>
         <link rel="stylesheet" href="style.css">
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                let script = document.createElement("script");
+                script.src="./index.js";
+                document.body.appendChild(script);
+            });
+        </script>
     </head>
     <body>
-        <span class="side-image"><a target="_blank" href="https://www.github.com/JaegerwaldDev/"></a></span>
-        <div class="content">
-            <span class="title">JaegerwaldDev</span>
-            <span class="bullet">Lua/JavaScript/Python Developer</span>
-            <span class="bullet">3D/2D Digital Artist</span>
-            <span class="subtitle">Hobbys</span>
-            <span class="bullet">Drawing</span>
-            <span class="bullet">Programming</span>
-            <span class="bullet">3D Printing</span>
-            <span class="subtitle">I'm trying to learn:</span>
-            <span class="bullet">Electronic Curcuits</span>
-            <span class="bullet">Designing Custom PCBs</span>
+        <div class="navbar">
+            <div class="nav"></div>
+            <div class="banner">
+                <span class="banner-text">Loading...</span>
+                <span class="page-close"></span>
+            </div>
+            <div class="page-files"></div>
         </div>
-        <div class="background">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+        <iframe class="content"></iframe>
     </body>
 </html>

@@ -1,343 +1,351 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-body {
-    background: linear-gradient(black, transparent);
-    margin: 0px;
+:root {
+    --gray-1: #141419;
+    --gray-2: #1e1e23;
+    --gray-3: #28282d;
+
+    --gray-4: #282832;
+    --gray-5: #3c3c46;
+    --gray-6: #50505a;
+
+    --gray-7: #3c3c4b;
+    --gray-8: #5a5a69;
+    --gray-9: #787887;
+}
+
+#fiveserver-info { /* frick fiveserver's popup */
+    display: none;
+}
+
+* {
+    font-family: "poppins";
+}
+
+html, body {
     padding: 0px;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    animation: background-pulse 15s infinite ease-in-out;
+    margin: 0px;
+    user-select: none;
 }
 
-@keyframes background-pulse {
-    0% {
-        background-color: #002020;
-    }
-    50% {
-        background-color: black;
-    }
-    100% {
-        background-color: #002020;
-    }
+body {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: calc(48px + 256px) auto;
+    gap: 1px;
+    background-color: var(--gray-2);
+}
+body > * {
+    background-color: var(--gray-1);
 }
 
-div.content, span.side-image {
-    transform: translateY(-50%);
+.navbar {
+    grid-column: 1;
+
+    display: grid;
+    grid-template-rows: 64px auto;
+    grid-template-columns: 48px auto;
+    gap: 1px;
+    background-color: var(--gray-2);
 }
-span.side-image {
-    height: 248px;
-    width: 248px;
+.navbar > * {
+    background-color: var(--gray-1);
+}
+
+.nav {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.nav > span {
+    width: 32px;
+    height: 32px;
     display: block;
-    position: fixed;
-    left: 128px;
-    top: 50%;
-    z-index: 1;
-    background-image: url("https://avatars.githubusercontent.com/u/86529399");
-    background-size: 256px;
-    border-radius: 256px;
-    border-width: 4px;
-    border-style: solid;
-    border-color: #ffffff20;
-    background-position-x: -4px;
-    background-position-y: -4px;
-    box-shadow: 0px 32px 32px #00000080;
-    animation: side-image-hover 5s infinite ease-in-out;
-    transition-duration: 0.25s;
-    overflow: hidden;
-}
-
-@keyframes side-image-hover {
-    0% {
-        transform: translateY(calc(-50% + 8px));
-    }
-    50% {
-        transform: translateY(calc(-50% - 8px));
-    }
-    100% {
-        transform: translateY(calc(-50% + 8px));
-    }
-}
-
-span.side-image:hover {
-    height: 232px;
-    width: 232px;
-    background-size: 240px;
-    left: 136px;
+    background-color: white;
+    margin: 8px;
+    border-radius: 4px;
     cursor: pointer;
+    background-size: 32px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
-span.side-image > a {
-    height: 100%;
-    width: 100%;
+.nav > span:hover::before {
     display: block;
-}
-
-span.side-image:active {
-    height: 216px;
-    width: 216px;
-    background-size: 224px;
-    left: 144px;
-    cursor: pointer;
-}
-
-div.content {
-    height: fit-content;
-    width: 75%;
-    left: 512px;
-    position: fixed;
-    top: 50%;
-    z-index: 1;
-}
-span.title {
-    font-size: 64px;
-    font-weight: 500;
-    display: block;
-}
-span.bullet {
-    font-size: 32px;
-    display: inline;
     position: relative;
-    left: 48px;
-    font-weight: 600;
-    display: block;
-}
-span.bullet::before {
     content: "";
-    display: block;
-    height: 12px;
-    width: 12px;
-    position: fixed;
-    border-radius: 12px;
-    left: 8px;
-    margin-top: 12px;
-    border-width: 6px;
+    background-color: var(--gray-1);
+    rotate: 45deg;
+    height: 8px;
+    width: 8px;
+    top: 12px;
+    left: 40px;
     border-style: solid;
-    border-color: white;
+    border-width: 0px;
+    border-color: var(--gray-2);
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+    z-index: 10;
 }
-span.subtitle {
-    font-size: 48px;
-    font-weight: 500;
+.nav > span:hover::after {
+    display: flex;
+    position: relative;
+    content: attr(name);
+    background-color: var(--gray-1);
+    height: 16px;
+    padding: 8px;
+    padding-bottom: 12px;
+    padding-top: 4px;
+    width: max-content;
+    border-radius: 4px;
+    top: -10px;
+    left: 44px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--gray-2);
+    box-shadow: 0px 0px 16px #00000080;
+    z-index: 9;
+    color: var(--gray-9);
+    align-items: baseline;
+}
+.nav > span::before:hover,
+.nav > span::after:hover {
+    display: none;
+}
+
+.nav > span.divider {
+    height: 1px;
+    background-color: var(--gray-3);
+    cursor: default;
+}
+.nav > span.divider::before,
+.nav > span.divider::after {
+    display: none;
+}
+
+.files {
+    padding: 8px;
+    display: none;
+}
+.files.selected {
     display: block;
 }
 
-div.background {
-    position: fixed;
+div.folder {
+    display: grid;
+    grid-template-columns: 16px auto;
+    grid-template-rows: 29px auto;
+}
+div.folder > span.folder {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 1;
+}
+div.folder > div {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+div.folder::after {
+    content: "";
+    grid-row: 2;
+    grid-column: 1;
+    background-color: var(--gray-3);
+    width: 1px;
+    transform: translateX(10px);
+}
+
+span.file, span.folder {
     display: block;
+    padding: 4px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: var(--gray-8);
+}
+span.file:hover, span.folder:hover {
+    background-color: var(--gray-2);
+    color: var(--gray-9);
+    cursor: pointer;
+}
+
+span.folder {
+    padding-left: 24px;
+}
+span.folder::before {
+    display: inline-block;
+    content: "";
+    width: 14px;
+    height: 14px;
+    
+    background-image: url("./arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 14px;
+    
+    position: absolute;
+    transform: translateX(-20px) translateY(3px);
+}
+
+div.folder.closed {
+    grid-template-columns: 16px auto;
+    grid-template-rows: 29px;
+}
+div.folder.closed::before,
+div.folder.closed > div {
+    display: none;
+}
+div.folder.closed > span.folder::before {
+    transform: translateX(-20px) translateY(3px) rotate(-90deg);
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+.banner > .banner-text {
+    position: absolute;
+    color: white;
+}
+
+.page-close {
+    height: 16px;
+    width: 16px;
+    background-image: url("./arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16px;
+    transform: rotate(90deg) translateY(-112px);
+}
+.page-close:hover {
+    border-radius: 4px;
+    background-color: #ffffff10;
+    padding: 4px;
+}
+
+iframe.content {
     height: 100%;
     width: 100%;
-    animation: background-wiggle 60s infinite ease-in-out;
+    border: none;
 }
 
-@keyframes background-wiggle {
-    0% {
-        rotate: 0deg;
-    }
-    25% {
-        rotate: 15deg;
-    }
-    50% {
-        rotate: 0deg;
-    }
-    75% {
-        rotate: -15deg;
-    }
-    190% {
-        rotate: 0deg;
-    }
+.navbar:not(:has(.page-files > .files.selected)) {
+    grid-template-rows: 64px auto;
+    grid-template-columns: 48px;
+}
+.navbar:not(:has(.page-files > .files.selected)) > .page-files,
+.navbar:not(:has(.page-files > .files.selected)) > .banner {
+    display: none;
 }
 
-div.background > * {
-    position: fixed;
-    height: 64px;
-    width: 64px;
-    border-radius: 64px;
-    top: 0px;
-    z-index: 0;
-    filter: blur(64px);
+body:not(:has(.navbar > .page-files > .files.selected)) {
+    grid-template-columns: 48px auto;
 }
 
-@keyframes background-orb {
-    0% {
-        top: 110%;
-        transform: translateX(0%);
-        opacity: 0;
-    }
-    25% {
-        opacity: 1;
-        transform: translateX(200%);
-    }
-    75% {
-        opacity: 1;
-        transform: translateX(-200%);
-    }
-    100% {
-        top: -10%;
-        transform: translateX(0%);
-        opacity: 0;
-    }
+.pill {
+    display: block;
+    position: absolute;
+    left: 0px;
+    height: 16px;
+    width: 4px;
+    transform: translateY(8px);
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+span:hover > .pill {
+    transform: translateY(-1px);
 }
 
-@keyframes background-orb-inverted {
-    0% {
-        top: 110%;
-        transform: translateX(0%);
-        opacity: 0;
-    }
-    25% {
-        opacity: 1;
-        transform: translateX(200%);
-    }
-    75% {
-        opacity: 1;
-        transform: translateX(-200%);
-    }
-    100% {
-        top: -10%;
-        transform: translateX(0%);
-        opacity: 0;
-    }
+.nav > span > .pill {
+    display: none;
+    background-color: var(--gray-4);
+}
+.nav > span.selected > .pill {
+    display: block;
+    left: 0px;
+    background-color: var(--gray-5);
+}
+.nav > span:hover > .pill {
+    display: block;
+    transform: translateY(-1px) scaleY(0.5);
+    left: -1px;
+}
+.nav > span.selected:hover > .pill {
+    transform: translateY(-1px) scaleY(1);
+    left: 0px;
 }
 
-div.background > *:nth-child(1) {
-    left: 55%;
-    animation: background-orb-inverted 7.5s infinite ease-in-out;
-    height: 128px;
-    width: 128px;
-    background-color: #002020;
-}
-div.background > *:nth-child(2) {
-    left: 70%;
-    animation: background-orb-inverted 7.5s infinite ease-in-out;
-    background-color: #006060;
-}
-div.background > *:nth-child(3) {
-    left: 55%;
-    animation: background-orb 10s infinite ease-in-out;
-    height: 128px;
-    width: 128px;
-    background-color: #004040;
-}
-div.background > *:nth-child(4) {
-    left: 85%;
-    animation: background-orb 5s infinite ease-in-out;
-    background-color: #008080;
-}
+/* mobile */
 
-div.background > *:nth-child(5) {
-    left: 85%;
-    animation: background-orb-inverted 7.5s infinite ease-in-out;
-    height: 128px;
-    width: 128px;
-    background-color: #002020;
-}
-div.background > *:nth-child(6) {
-    left: 25%;
-    animation: background-orb-inverted 5s infinite ease-in-out;
-    background-color: #006060;
-}
-div.background > *:nth-child(7) {
-    left: 95%;
-    animation: background-orb-inverted 10s infinite ease-in-out;
-    height: 128px;
-    width: 128px;
-    background-color: #004040;
-}
-div.background > *:nth-child(8) {
-    left: 95%;
-    animation: background-orb 5s infinite ease-in-out;
-    background-color: #008080;
-}
-
-div.background > *:nth-child(9) {
-    left: 60%;
-    animation: background-orb-inverted 10s infinite ease-in-out;
-    height: 128px;
-    width: 128px;
-    background-color: #002020;
-}
-div.background > *:nth-child(10) {
-    left: 25%;
-    animation: background-orb-inverted 7.5s infinite ease-in-out;
-    background-color: #006060;
-}
-div.background > *:nth-child(11) {
-    left: 0%;
-    animation: background-orb 7.5s infinite ease-in-out;
-    height: 128px;
-    width: 128px;
-    background-color: #004040;
-}
-div.background > *:nth-child(12) {
-    left: 45%;
-    animation: background-orb 7.5s infinite ease-in-out;
-    background-color: #008080;
-}
-
-div.background > *:nth-child(13) {
-    left: 20%;
-    animation: background-orb-inverted 10s infinite ease-in-out;
-    height: 128px;
-    width: 128px;
-    background-color: #002020;
-}
-div.background > *:nth-child(14) {
-    left: 50%;
-    animation: background-orb-inverted 5s infinite ease-in-out;
-    background-color: #006060;
-}
-div.background > *:nth-child(15) {
-    left: 15%;
-    animation: background-orb 7.5s infinite ease-in-out;
-    height: 128px;
-    width: 128px;
-    background-color: #004040;
-}
-
-
-@media only screen and (max-width: 1100px) {
-    span.side-image {
-        left: 50% !important;
-        top: 64px !important;
-        transform: translateX(-50%);
+@media only screen and (max-width: 700px) {
+    body {
+        grid-template-rows: auto calc(48px + 256px);
+        grid-template-columns: auto;
+        gap: 1px;
     }
 
-    @keyframes side-image-hover {
-        0% {
-            transform: translateX(-50%) translateY(0px);
-        }
-        25% {
-            transform: translateX(-50%) translateY(8px);
-        }
-        75% {
-            transform: translateX(-50%) translateY(-8px);
-        }
-        100% {
-            transform: translateX(-50%) translateY(0px);
-        }
+    .nav > span > .pill,
+    .nav > span.selected > .pill,
+    .nav > span:hover > .pill,
+    .nav > span.selected:hover > .pill {
+        display: none;
     }
 
-    span.side-image:hover {
-        top: 72px !important;
+    .navbar {
+        grid-row: 2;
+        grid-column: 1;
+    
+        grid-template-rows: 64px auto 48px;
+        grid-template-columns: auto;
     }
-    span.side-image:active {
-        top: 80px !important;
+
+    iframe.content {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .nav {
+        grid-row: 3;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+    .nav > * {
+        display: inline-block !important;
+        margin-left: 4px !important;
+        margin-right: 4px !important;
+    }
+    .nav > span::before,
+    .nav > span::after {
+        display: none !important;
     }
     
-    div.content {
-        height: fit-content;
-        width: 75% !important;
-        left: 50% !important;
-        top: calc(50% + 128px) !important;
-        transform: translateX(-50%) translateY(-50%);
+    .nav > span.divider {
+        width: 1px;
+        height: 32px;
+    }
+    .nav > span.divider::before,
+    .nav > span.divider::after {
+        display: none;
     }
 
-    span.title {
-        text-align: center !important;
-        width: 100% !important;
-        font-weight: 700;
+    .navbar:not(:has(.page-files > .files.selected)) {
+        grid-template-rows: 48px;
+        grid-template-columns: auto;
     }
-    span.subtitle {
-        text-align: center !important;
-        width: 100% !important;
-        font-weight: 600;
+    .navbar:not(:has(.page-files > .files.selected)) > .page-files,
+    .navbar:not(:has(.page-files > .files.selected)) > .banner {
+        display: none;
+    }
+    .navbar:not(:has(.page-files > .files.selected)) > .nav {
+        grid-row: 1;
+    }
+    
+    body:not(:has(.navbar > .page-files > .files.selected)) {
+        grid-template-rows: auto 48px !important;
+        grid-template-columns: auto;
+    }
+
+    .page-close {
+        height: 32px;
+        width: 32px;
     }
 }
