@@ -1,8 +1,15 @@
 console.log("Hello World from index.js!");
 
-if (document.body.clientHeight > document.body.clientWidth) {
-    document.body.style.zoom = 3;
+function mobileCheck() {
+    if (document.body.clientHeight / 16 > document.body.clientWidth / 9) {
+        document.body.style.zoom = 3;
+    } else {
+        document.body.style.zoom = 1;
+    };
 };
+mobileCheck();
+
+document.body.onresize = mobileCheck;
 
 async function getJson(url) {
     let result = {};
