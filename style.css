@@ -276,7 +276,7 @@ span:hover > .pill {
 
 /* mobile */
 
-@media only screen and (max-width: 700px) {
+@media (orientation: portrait) {
     body {
         grid-template-rows: auto calc(48px + 256px);
         grid-template-columns: auto;
