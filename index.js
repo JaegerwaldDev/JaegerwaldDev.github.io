@@ -1,6 +1,6 @@
 console.log("Hello World from index.js!");
 
-if (document.body.clientHeight % 9 > document.body.clientWidth % 16) {
+if (document.body.clientHeight > document.body.clientWidth) {
     document.body.style.zoom = 3;
 };
 
