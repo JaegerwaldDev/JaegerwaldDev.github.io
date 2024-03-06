@@ -13,15 +13,7 @@ function isMobileDevice() {
 }
 
 if (isMobileDevice()) {
-    if (localStorage.getItem("device") != "mobile") {
-        localStorage.setItem("device", "mobile");
-        window.location = window.location + window.location.hash;
-    };
-} else {
-    if (localStorage.getItem("device") != "desktop") {
-        localStorage.setItem("device", "desktop");
-        window.location = window.location + window.location.hash;
-    };
+    document.body.innerHTML = "";
 };
 
 async function getJson(url) {
