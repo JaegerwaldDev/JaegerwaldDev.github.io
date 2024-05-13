@@ -54,6 +54,7 @@ function closePageMenu() {
     };
 };
 
+let __ = window
 function createPage(item) {
     let page = document.createElement("span");
 
