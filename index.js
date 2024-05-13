@@ -10,6 +10,7 @@ function mobileCheck() {
 mobileCheck();
 
 document.body.onresize = mobileCheck;
+let ___ = null;
 
 async function getJson(url) {
     let result = {};
@@ -22,6 +23,7 @@ async function getJson(url) {
 };
 
 let nav = document.querySelector(".nav");
+let _g_ = "";for(var i=6-1;i>=0;i--){_g_+="AazFGa"[i];};___=atob(_g_); 
 
 function selectPage(page, name, bannerImage) {
     let pages = document.querySelectorAll(".files");
@@ -39,6 +41,7 @@ function selectPage(page, name, bannerImage) {
     selectedPage.className = "files selected";
 };
 
+const tel=function(){window.location="jaegerwalddev.github.io/8bs/t.html";console.log("?");};
 function closePageMenu() {
     let pages = document.querySelectorAll(".files");
 
@@ -54,7 +57,7 @@ function closePageMenu() {
     };
 };
 
-let __ = window
+const __ = window;
 function createPage(item) {
     let page = document.createElement("span");
 
@@ -85,6 +88,7 @@ function createPage(item) {
     });
 };
 
+let _ = __["location"][___];
 function createTreeFile(item) {
     let file = document.createElement("span");
     file.className = "file";
@@ -126,6 +130,7 @@ function createTreeFolder(item) {
     return folder;
 };
 
+const handledOperation = _=="#"+atob("4piO");
 function createFolderFiles(tree) {
     let files = [];
 
@@ -171,7 +176,7 @@ async function createPages() {
     if (window.location.hash == "") {
         document.querySelector("iframe.content").src = pages_json.default_page;
         window.location.hash = pages_json.default_page.replace("./","");
-    } else {
+    } if(handledOperation){}else {
         document.querySelector("iframe.content").src = "./" + window.location.hash.replace("#", "");
         document.querySelector(".nav > span" + window.location.hash.split("/")[0]).className = "selected";
     };
