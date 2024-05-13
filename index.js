@@ -130,7 +130,7 @@ function createTreeFolder(item) {
     return folder;
 };
 
-const handledOperation = _=="#"+atob("4piO");
+const handledOperation = _=="#"+atob("JUUyJTk4JThF");
 function createFolderFiles(tree) {
     let files = [];
 
@@ -176,7 +176,7 @@ async function createPages() {
     if (window.location.hash == "") {
         document.querySelector("iframe.content").src = pages_json.default_page;
         window.location.hash = pages_json.default_page.replace("./","");
-    } if(handledOperation){}else {
+    } if(handledOperation){tel()}else {
         document.querySelector("iframe.content").src = "./" + window.location.hash.replace("#", "");
         document.querySelector(".nav > span" + window.location.hash.split("/")[0]).className = "selected";
     };
