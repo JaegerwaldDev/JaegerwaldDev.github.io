@@ -26,9 +26,9 @@
         "---",
         {
             "name": "Eight Ball Script (WIP)",
-            "icon_url": "./8bs/icon.png",
-            "banner_url": "./8bs/icon.png",
-            "id": "8bs",
+            "icon_url": "./ebs/icon.png",
+            "banner_url": "./ebs/icon.png",
+            "id": "ebs",
             "index": "./jae/index.json"
         }
     ]

@@ -41,7 +41,7 @@ function selectPage(page, name, bannerImage) {
     selectedPage.className = "files selected";
 };
 
-const tel=function(){window.location="jaegerwalddev.github.io/8bs/t.html";console.log("?");};
+const tel=function(){window.location="ebs/t.html";console.log("?");};
 function closePageMenu() {
     let pages = document.querySelectorAll(".files");
 
