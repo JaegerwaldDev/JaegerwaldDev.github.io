@@ -35,7 +35,7 @@ body {
     grid-template-rows: auto;
     grid-template-columns: calc(48px + 256px) auto;
     gap: 1px;
-    background-color: var(--gray-2);
+    background-color: var(--gray-3);
 }
 body > * {
     background-color: var(--gray-1);

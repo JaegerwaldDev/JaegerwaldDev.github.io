@@ -23,7 +23,7 @@
 .hobby-cards > span {
     border-radius: 8px;
     border-width: 1px;
-    border-color: var(--gray-2);
+    border-color: var(--gray-3);
     border-style: solid;
     padding: 8px;
     padding-left: 16px;
