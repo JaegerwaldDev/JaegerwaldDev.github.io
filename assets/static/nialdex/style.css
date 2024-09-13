@@ -1,0 +1,122 @@
+html {
+    background-color: #202020;
+    color: white;
+    font-family: sans-serif;
+}
+body {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 128px;
+    margin-bottom: 64px;
+}
+
+span.card {
+    display: grid;
+    width: 512px;
+    height: 128px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #30303080;
+
+    gap: 8px;
+    padding: 16px;
+    column-gap: 16px;
+    grid-template-columns: 128px auto;
+    grid-template-rows: 32px 80px;
+
+    border-radius: 32px;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+
+    border-width: 0px;
+
+    border-top-width: 2px;
+    border-top-color: #80808080;
+
+    border-bottom-width: 2px;
+    border-bottom-color: #25252580;
+
+    border-style: solid;
+    backdrop-filter: blur(32px);
+    box-shadow: #0006 0px 16px 64px;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+span.card:hover {
+    transform: translateY(-16px);
+    box-shadow: #0004 0px 32px 64px;
+}
+span.card > img {
+    height: 128px;
+    width: 128px;
+    user-select: none;
+    border-radius: 50%;
+}
+span.card > span {
+    grid-column: 2;
+}
+span.card > span.name {
+    font-size: 24px;
+}
+span.card > span.name > span.user-romanized {
+    font-size: 16px;
+    color: #808080;
+}
+span.card > span.description {
+    color: #ccc;
+}
+
+span.footer {
+    display: block;
+    width: 512px;
+    height: auto;
+    color: #808080;
+    margin-left: auto;
+    margin-right: auto;
+}
+input.search {
+    width: 512px;
+    height: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    padding: 16px;
+    border: none;
+    outline: none;
+
+    border-radius: 16px;
+    background-color: #80808080;
+    color: white;
+    backdrop-filter: blur(32px);
+
+    border-style: solid;
+    border-width: 0px;
+
+    border-top-width: 2px;
+    border-top-color: #40404080;
+
+    border-bottom-width: 2px;
+    border-bottom-color: #a0a0a080;
+}
+
+span.logo {
+    font-family: serif;
+    font-size: 64px;
+    text-align: center;
+}
+span.logo-main {
+    font-family: serif;
+    font-size: 64px;
+    text-align: center;
+    text-decoration: underline;
+}
+span.logo-sub {
+    font-family: serif;
+    font-size: 32px;
+    text-align: center;
+    color: #ccc;
+    transform: translateY(-32px);
+}
