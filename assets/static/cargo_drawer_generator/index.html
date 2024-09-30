@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cargo Drawer Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Cargo Drawer Generator</h1>
+    <p>Use this to make image data for Cargo Drawer. As of now,<br>
+    images can only by 16x16, and only white pixels will get drawn,<br>
+    the rest will be ignored. If something is going wrong, it's<br>
+    probably a human-made error.</p>
+    <h2>Upload</h2>
+    <input id="upload-area" type="file" class="upload"></input><br>
+    <i>Drag & Drop supported!</i><br><br>
+    <button id="upload">Upload & Convert</button>
+    <h2>Result</h2>
+    <pre id="result"><code><i>Image data will go here.</i></code></pre>
+    <button id="copy-result">Copy</button>
+    <script src="index.js"></script>
+</body>
+</html>
