@@ -1,0 +1,12 @@
+body {
+    background-color: rgb(200, 250, 200);
+}
+
+p {
+    background-color: #ff0000;
+    width: 50%;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow: 8px 8px 4px gray;
+}
