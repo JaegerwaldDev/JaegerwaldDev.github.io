@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h3>unordered list (ul) - ungeordnete liste</h3>
+    <ul>
+        <li>Schuhe</li>
+        <li>Hemd</li>
+        <li>Schlüssel</li>
+        <li>Uhr</li>
+    </ul>
+
+    <ul class="obst">
+        <li>Apfel</li>
+        <li>Birne</li>
+        <li>Orange</li>
+    </ul>
+
+    <ul id="auto">
+        <li>Audio</li>
+        <li>VW</li>
+        <li>Tesla
+            <ul id="typ">
+                <li>Model S</li>
+                <li>Model 3</li>
+                <li>Model X</li>
+                <li>Model Y</li>
+            </ul>
+        </li>
+        <li>BYD</li>
+    </ul>
+
+    <h3>order list (ol) - geordnete Liste</h3>
+
+    <ol>
+        <li>Erstens</li>
+        <li>Zweitens</li>
+        <li>Drittens</li>
+        <li>Viertens</li>
+        <li>Fünftens</li>
+    </ol>
+
+    <ol class="plf">
+        <li>Angabe öffnen</li>
+        <li>Aufgaben lösens</li>
+        <ul class="plf-items">
+            <li>CargoTrucker</li>
+            <li>Console</li>
+            <li>Flow Chart</li>
+        </ul>
+        <li>Zip-File erstellen</li>
+        <li>Zip-File auf Nachname umbennen</li>
+    </ol>
+
+    <h3>Console I/O</h3>
+    <ul>
+        <li>ReadString</li>
+        <li>ReadInt</li>
+        <li>WriteLine</li>
+        <li>Write</li>
+    </ul>
+
+    <h3>Variablenmanipulation</h3>
+    <ul>
+        <li>Variable Anlegen</li>
+        <li>Variable Manipulieren</li>
+        <li>Variable Setzen</li>
+    </ul>
+
+    <span class="slot-container">
+        <span id="slotMachine">
+            <span class="slot"></span><span class="slot"></span><span class="slot"></span>
+        </span>
+    </span>
+    <button id="spinSlots">Test your chances</button>
+    <script src="js/slot_machine.js"></script>
+</body>
+</html>

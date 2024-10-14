@@ -1,0 +1,43 @@
+/* list-style-type gibt es als disc(default)/circle/square */
+ul li {list-style-type: square;}
+
+ul.obst li {list-style-type: circle;}
+
+ul.auto li {list-style-type: disc;}
+
+ul.typ li  {list-style-type: circle;}
+
+ol.plf li {list-style-type: lower-roman;}
+ul.plf-items li {list-style-type: disc;}
+
+
+#slotMachine {
+    display: flex;
+    flex-direction: row;
+    gap: 1px;
+    height: 48px;
+    padding: 1px;
+    width: min-content;
+    background-color: burlywood;
+    border-radius: 2px;
+    user-select: none;
+}
+.slot {
+    background: linear-gradient(antiquewhite, white, bisque);
+    display: inline-block;
+    height: 48px;
+    width: 24px;
+    border-radius: 2px;
+    text-align: center;
+    line-height: 48px;
+}
+
+.slot-container {
+    background: linear-gradient(#7B3F00, #6F4E37, #5C4033);
+    padding: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin: 16px;
+    display: block;
+    width: min-content;
+}
