@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabellen</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Tabellen</h1>
+
+    <!-- Tabellen beginnen immer mit dem TAG <table> -->
+    <table>
+        <!-- th ... steht für Table-Heading (Tabellenüberschrift) -->
+        <tr>
+            <th>Spalte 1</th>
+            <th>Spalte 2</th>
+            <th>Spalte 3</th>
+            <th>Spalte 4</th>
+        </tr>
+        <!-- tr ... steht für table-row (Zeile)
+             td ... steht für table-data        -->
+        <tr>
+            <td colspan="2">Z1S1</td>
+            <td>Z1S3</td>
+            <td>Z1S4</td>
+        </tr>
+        <tr>
+            <td>Z2S1</td>
+            <td>Z2S2</td>
+            <td>Z2S3</td>
+            <td>Z2S4</td>
+        </tr>
+        <tr>
+            <td>Z3S1</td>
+            <td>Z3S2</td>
+            <td>Z3S3</td>
+            <td rowspan="2">Z3S4</td>
+        </tr>
+        <tr>
+            <td>Z4S1</td>
+            <td>Z4S2</td>
+            <td>Z4S3</td>
+        </tr>
+    </table>
+
+    <h1>
+        <img src="images/freaky_text.png" height="48px">
+        Tabellen
+    </h1>
+    <table class="freaky">
+        <tr>
+            <th>Header</th>
+            <th>Header</th>
+            <th>Header</th>
+        </tr>
+        <tr>
+            <td>Row</td>
+            <td>Row</td>
+            <td>Row</td>
+        </tr>
+        <tr>
+            <td>Row</td>
+            <td>Row</td>
+            <td>Row</td>
+        </tr>
+    </table>
+</body>
+</html>

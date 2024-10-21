@@ -1,0 +1,32 @@
+/* Rahmen um den Table */
+table {
+    border: 2px solid red;
+    border-collapse: collapse;
+}
+/* Rahmen um die Zelle */
+td, th {
+    border: 1px solid black;
+    text-align: center;
+}
+
+table.freaky > tbody > tr > th {
+    background-color: gray;
+    font-size: 24px;
+    font-style: italic;
+}
+table.freaky > tbody > tr > th {
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+table.freaky {
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    background-color: wheat;
+}
