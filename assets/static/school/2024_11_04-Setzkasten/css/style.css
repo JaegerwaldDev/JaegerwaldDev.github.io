@@ -1,0 +1,23 @@
+#fiveserver-info-wrapper {
+    display: none !important;
+}
+
+div {
+    border: 2px solid black;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    margin-top: 80px;
+}
+
+table {
+    border: 10px solid bisque;
+    border-collapse: collapse;
+    margin: auto;
+}
+td {
+    border: 5px solid bisque;
+    height: 50px;
+    width: 50px;
+    background-color: burlywood;
+}
