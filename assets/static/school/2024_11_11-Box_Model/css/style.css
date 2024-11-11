@@ -1,0 +1,29 @@
+#fiveserver-info-wrapper {
+    display: none !important;
+}
+
+body {
+    margin: 0px;
+}
+
+.container_1 {
+    border: 10px solid yellow;
+    height: 500px;
+    width: 50%;
+    background-color: #00f;
+    margin-left: 100px;
+    margin-top: 200px;
+    padding-top: 100px;
+    /* margin ... Außenabstand */
+}
+
+.container_2 {
+    border: 2px solid black;
+    height: 300px;
+    width: 400px;
+    background-color: #0f0;
+    margin: auto;
+    overflow: auto;
+    padding: 10px;
+    /* margin ... Außenabstand */
+}
