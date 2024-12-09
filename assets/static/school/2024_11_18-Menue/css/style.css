@@ -6,3 +6,38 @@ li {
     background-color: lightgreen;
     padding: 8px;
 }
+li a {
+    padding-right: 96px;
+    text-decoration: none;
+}
+li:hover {
+    background-color: green;
+}
+li:hover a {
+    color: white;
+}
+
+ul#menuVertical li {
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 4px;
+    width: 96px;
+}
+
+.header {
+    background-image: url("../images/header.jpg");
+    background-size: cover;
+    padding: 64px;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+
+.container p {
+    padding-right: 24px;
+    padding-left: 24px;
+}
+
+.flexcontainer {
+    display: flex;
+}
