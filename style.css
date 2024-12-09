@@ -43,6 +43,8 @@ body {
     background-color: #001010;
 }
 .bar > span.right {
+    position: fixed;
+    right: calc(50% - 240px);
 }
 .bar > span.right::selection {
     color: #7fff7f;
