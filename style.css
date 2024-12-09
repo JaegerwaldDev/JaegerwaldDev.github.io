@@ -20,11 +20,9 @@ html {
 }
 body {
     width: 512px;
-    position: fixed;
     display: block;
-    top: 0px;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-left: auto;
+    margin-right: auto;
 }
 *::selection {
     color: #001010;
@@ -45,8 +43,6 @@ body {
     background-color: #001010;
 }
 .bar > span.right {
-    position: fixed;
-    right: 10px;
 }
 .bar > span.right::selection {
     color: #7fff7f;
@@ -70,22 +66,37 @@ body {
 
 .divider {
     height: 2px;
-    margin-top: 7px;
-    margin-bottom: 7px;
+    margin-top: 23px;
+    margin-bottom: 23px;
     background-color: #7fff7f;
 }
-a {
+a, .run {
     color: #7fff7f;
     text-decoration: none;
+}
+.run {
+    user-select: none;
 }
 a::before {
     content: "::"
 }
-a:hover {
+.run::before {
+    content: ">>"
+}
+a:hover, .run:hover {
+    color: #001010;
+    background-color: #7fff7f;
+    cursor: pointer;
+}
+a::selection, .run::selection {
     color: #001010;
     background-color: #7fff7f;
 }
-a::selection {
-    color: #001010;
-    background-color: #7fff7f;
+
+.columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.push {
+    margin-left: 8px;
 }
