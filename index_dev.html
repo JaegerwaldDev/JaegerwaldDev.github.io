@@ -8,7 +8,8 @@
         <meta content="https://jaegerwalddev.github.io" property="og:url"/>
         <meta content="https://jaegerwalddev.github.io/assets/embed.png" property="og:image"/>
         <meta content="#7fff7f" data-react-helmet="true" name="theme-color"/>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="src/style.css">
+        <link rel="stylesheet" href="src/blog.css">
     </head>
     <body>
         <div class="bar">Welcome to my website!<span class="right">v1.1.0-Dev | <a href="https://github.com/JaegerwaldDev/JaegerwaldDev.github.io/">View Source</a></span></div>
@@ -34,6 +35,20 @@
                     Non-CLI Mode
                 </div>
             </span>
+        </div>
+
+        <div class="bar">Blog<span class="right" id="rss">| <a href="#">RSS</a></span></div>
+        <span class="run" id="blogRandomize">Randomize</span><br>
+        <span class="run" id="blogRandomize">Navigate to most recent</span><br>
+        <a href="https://github.com/JaegerwaldDev/JaegerwaldDev.github.io/">My goofy RSS generator I made for this</a><br><br><br>
+
+        <div id="blogWindow">
+            <button class="previous"><</button>
+            <span class="window">
+                <span class="title">Title Title Title<span class="right"><span>i</span> | <span>x</span></span></span>
+                <span>meow meow meow :3</span>
+            </span>
+            <button class="next">></button>
         </div>
 
         <div class="bar">Overscoped projects I'm working on rn<span class="right">| 11/4/2024</span></div>
@@ -66,6 +81,6 @@
                 </div>
             </span>
         </div>
-        <script src="index.js"></script>
+        <script src="src/index.js"></script>
     </body>
 </html>

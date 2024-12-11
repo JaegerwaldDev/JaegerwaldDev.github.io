@@ -1,6 +1,6 @@
 @font-face {
     font-family: "lucida";
-    src: url("assets/font/lucida.ttf");
+    src: url("../assets/font/lucida.ttf");
 }
 #fiveserver-info {
     display: none;
@@ -9,7 +9,7 @@ html {
     background-color: #001010;
     color: #7fff7f;
     font-family: "lucida";
-    background-image: url("assets/barely_noticable_line.png");
+    background-image: url("../assets/barely_noticable_line.png");
     image-rendering: pixelated;
 }
 * {
@@ -42,9 +42,9 @@ body {
     color: #7fff7f;
     background-color: #001010;
 }
-.bar > span.right {
-    position: fixed;
-    right: calc(50% - 240px);
+span.right {
+    float: right;
+    margin-right: 10px;
 }
 .bar > span.right::selection {
     color: #7fff7f;
