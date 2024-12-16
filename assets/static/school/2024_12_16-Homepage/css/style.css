@@ -1,0 +1,80 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Calibri, Tahoma, Arial;
+}
+
+#container {
+    display: flex;
+    height: calc(100vh - 288px);
+}
+
+header {
+    height: 192px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    background-image: url("../images/weihnachtsstatt.jpg");
+    background-position: top;
+    background-size: cover;
+}
+
+nav {
+    background-color: darkred;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+aside {
+    background-color: lightgray;
+    width: 20%;
+    padding: 16px;
+}
+
+main {
+    background-color: white;
+    width: 80%;
+    padding: 16px;
+}
+
+footer {
+    background-color: gray;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mainPage {
+    display: flex;
+}
+
+figure {
+    margin: 0px;
+}
+article {
+    padding-left: 16px;
+}
+
+#menu {
+    list-style-type: none;
+}
+#menu li {
+    display: inline-block;
+    padding: 8px;
+    font-size: 20px;
+}
+#menu li:hover {
+    background-color: brown;
+}
+#menu li a {
+    text-decoration: none;
+    color: white;
+}
+#menu li:hover a {
+    color: lightgray;
+}
