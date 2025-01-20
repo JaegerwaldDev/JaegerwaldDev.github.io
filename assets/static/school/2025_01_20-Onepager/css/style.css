@@ -1,0 +1,56 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    background-color: black;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 4px;
+}
+nav a:hover {
+    color: yellow;
+}
+
+#page_1 {
+    background-color: green;
+    padding-top: 48px;
+}
+#page_2 {
+    background-color: blue;
+}
+#page_3 {
+    background-color: lightblue;
+}
+
+section {
+    height: 100vh;
+}
+
+#square {
+    width: 96px;
+    height: 96px;
+    background-color: white;
+    transition: width 2s;
+}
+
+#square:hover {
+    width: 256px;
+}
