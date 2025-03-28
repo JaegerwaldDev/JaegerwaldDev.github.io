@@ -1,0 +1,95 @@
+td {
+    width: 75%;
+}
+td.ammount {
+    text-align: right;
+    padding-right: 16px;
+    width: 25%;
+}
+
+html {
+    background-color: antiquewhite;
+    font-family: sans-serif;
+}
+
+body {
+    width: 1024px;
+    background-color: white;
+    margin: 0px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    max-width: 100%;
+}
+
+header {
+    padding: 16px;
+    padding-left: 64px;
+    color: white;
+    background-image: url("img/chalkboard.jpg");
+    background-size: cover;
+    user-select: none;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+}
+
+nav {
+    background-color: green;
+    padding: 8px;
+    padding-left: 32px;
+}
+
+aside {
+    width: 25%;
+}
+article {
+    width: 75%;
+    padding-left: 16px;
+}
+
+nav > ul {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    padding: 0px;
+    margin: 0px;
+}
+nav > ul > li {
+    list-style: none;
+}
+nav > ul > li > a {
+    user-select: none;
+    color: white;
+    text-decoration: none;
+}
+nav > ul > li > a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+footer {
+    padding: 16px;
+    background-color: gray;
+    color: white;
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        transform: none;
+        width: unset;
+        display: block;
+        margin: 0px;
+    }
+    aside, article {
+        width: unset;
+    }
+    main {
+        flex-direction: column;
+    }
+    aside {
+        justify-self: center;
+    }
+}
